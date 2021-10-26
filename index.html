@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.css">
   </head>
   <body>
     <header class="hero-box">
       <section class="hero-image-box">
         <img
           class="hero-image"
-          src="img/2021_08_31 Torres Alex Digital Painting Project wip.jpg"
-          alt="Work in Progress painting, purple man watching clouds swirl broken moon."
+          src="img/20210831 Torres Alex Digital Painting Project.png"
+          alt="Digital painting of a purple man watching clouds swirl a broken moon."
         />
       </section>
       <section class="hero-text-box">
@@ -21,5 +22,55 @@
         <p class="hero-text">hello world</p>
       </section>
     </header>
-  </body>
+    <!-- begin portfolio gallery-->
+    <section class="portfolio-gallery">
+    <h1>Portfolio</h1>
+    <div class="gallery-item">
+      <a
+        href="img/20210914 Torres Alex Atmospheric Perspective project.png"
+        class="glightbox"
+      >
+        <img
+          src="img/20210914 Torres Alex Atmospheric Perspective project.png"
+          alt="three blue towers behind wriggling metal tendrils being surrounded by clouds with a beam of light coming down from a floating blue pyramid in the center"
+          class="gallery-img"
+        />
+      </a>
+    </div>
+
+    <div class="gallery-item">
+      <a href="img/20211018 Torres Alex Logo Project.png" class="glightbox">
+        <img
+          src="img/20211018 Torres Alex Logo Project.png"
+          alt="four logos, two are personal logos for Alex Torres, two are logos made for Cleveland Institiute of Art"
+          class="gallery-img"
+        />
+      </a>
+    </div>
+
+    <div class="gallery-item">
+      <a href="img/turnaround.png" class="glightbox">
+        <img
+          src="img/turnaround.png"
+          alt="a turnaround sheet of a short, round, spooky character"
+          class="gallery-img"
+        />
+      </a>
+    </div>
+
+    <div class="gallery-item">
+      <a href="img/flour-bag-animation-Homework.gif" class="glightbox">
+        <img
+          src="img/flour-bag-animation-Homework.gif"
+          alt="a video of a flour bag jumping ontop of a building and hitting the side when he tries to do it again"
+          class="gallery-img"
+        />
+      </a>
+    </div>
+  </section>
+      <script scr="js/glightboxmin.js"></script>
+      <script type=text/javascript>
+      const lightbox = glightbox({ loop: true })
+      </script>
+    </body>
 </html>
